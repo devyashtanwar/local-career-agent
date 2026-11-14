@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-15T00:47:59.859011",
+  "checked_ports": [
+    1234,
+    18789,
+    18799,
+    18801
+  ],
+  "remaining_listeners": [],
+  "rootless_docker_socket_listening": false,
+  "gateway_stopped": true,
+  "model_api_stopped": true,
+  "model_unloaded": true,
+  "llmster_stopped": true,
+  "synthetic_container_stopped": true
+}

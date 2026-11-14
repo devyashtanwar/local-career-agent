@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-11-14T18:08:50.735110+00:00",
+  "inventory": {
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "vram_mib": 12288,
+    "driver": "615.78.08",
+    "free_vram_mib": 11774,
+    "ram_kib": 16193184,
+    "available_ram_kib": 12791848
+  },
+  "model": {
+    "repo": "unsloth/Qwen3.5-9B-GGUF",
+    "revision": "3885219b6810b007914f3a7950a8d1b469d598a5",
+    "file": "Qwen3.5-9B-Q4_K_M.gguf",
+    "bytes": 5680522464,
+    "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8"
+  },
+  "model_id": "career-qwen35-9b",
+  "api": "http://127.0.0.1:1234/v1",
+  "context_tokens": 4096,
+  "status": "passed",
+  "lms_version": "CLI commit: 43d4b26",
+  "lms_path": "${HOME}/.lmstudio/bin/lms",
+  "previous_models": "[]",
+  "registered_model_key": "qwen3.5-9b",
+  "tests": [
+    {
+      "test": "extraction",
+      "passed": true,
+      "seconds": 0.58,
+      "completion_tokens": 23,
+      "completion_tokens_per_total_second": 39.67,
+      "finish_reason": "stop"
+    },
+    {
+      "test": "tool_call",
+      "passed": true,
+      "seconds": 0.866,
+      "completion_tokens": 29,
+      "completion_tokens_per_total_second": 33.5,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "after_gpu": "5623, 6332"
+}

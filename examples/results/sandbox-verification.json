@@ -1,0 +1,13 @@
+{
+  "user": "0:0",
+  "readonly_root": true,
+  "network": "none",
+  "cap_drop": [
+    "ALL"
+  ],
+  "security_opt": [
+    "no-new-privileges"
+  ],
+  "memory_bytes": 1073741824,
+  "pids_limit": 128
+}

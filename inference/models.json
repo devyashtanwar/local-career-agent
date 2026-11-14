@@ -1,0 +1,23 @@
+{
+  "qwen35-9b": {
+    "repo": "unsloth/Qwen3.5-9B-GGUF",
+    "revision": "3885219b6810b007914f3a7950a8d1b469d598a5",
+    "file": "Qwen3.5-9B-Q4_K_M.gguf",
+    "bytes": 5680522464,
+    "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8"
+  },
+  "qwen3-14b": {
+    "repo": "Qwen/Qwen3-14B-GGUF",
+    "revision": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "file": "Qwen3-14B-Q4_K_M.gguf",
+    "bytes": 9001752960,
+    "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0"
+  },
+  "qwen35-4b": {
+    "repo": "unsloth/Qwen3.5-4B-GGUF",
+    "revision": "e87f176479d0855a907a41277aca2f8ee7a09523",
+    "file": "Qwen3.5-4B-Q4_K_M.gguf",
+    "bytes": 2740937888,
+    "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4"
+  }
+}

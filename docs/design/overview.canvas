@@ -1,0 +1,271 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": -210,
+      "width": 1860,
+      "height": 140,
+      "text": "# Career switch system\n**Follow the numbered paths. Double-click a card to follow its links.** Green = preparation; orange = your decision; purple = local private processing; red = boundary or stop. Detailed notes contain the full flowcharts and exception IDs. Proposed end-to-end design. Local runtime baseline exists; account workflows are not deployed."
+    },
+    {
+      "id": "profile",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 280,
+      "color": "4",
+      "text": "## 1 · Define a better job\n\nVerify your facts, priorities and shareable project evidence. Missing critical facts become questions.\n\n[[docs/architecture.md|Start here and whole-system flow]]"
+    },
+    {
+      "id": "discover",
+      "type": "text",
+      "x": 480,
+      "y": 0,
+      "width": 420,
+      "height": 280,
+      "color": "4",
+      "text": "## 2 · Discover and qualify\n\nPermitted feeds, alerts and manual leads. Verify employer, freshness, eligibility and duplicates.\n\n[[docs/design/applications.md#Discovery and qualification|Discovery gates E01–E11]]"
+    },
+    {
+      "id": "apply",
+      "type": "text",
+      "x": 960,
+      "y": 0,
+      "width": 420,
+      "height": 280,
+      "color": "2",
+      "text": "## 3 · Prepare and apply\n\nTruthful resume + verified answers. Review exact outgoing data. Controlled submit or manual handoff.\n\n[[docs/design/applications.md#Prepare, review, submit, confirm|Application gates E12–E22]]"
+    },
+    {
+      "id": "interview",
+      "type": "text",
+      "x": 1440,
+      "y": 0,
+      "width": 420,
+      "height": 280,
+      "color": "4",
+      "text": "## 4 · Respond and interview\n\nVerify recruiter. Draft replies, resolve scheduling, prepare from actual submitted packet.\n\n[[docs/design/interviews.md|Response and interview flow]]"
+    },
+    {
+      "id": "portfolio",
+      "type": "text",
+      "x": 0,
+      "y": 360,
+      "width": 420,
+      "height": 280,
+      "color": "4",
+      "text": "## 5 · Build evidence\n\nSmall real project increments. Save demo, ownership, result and limitations. No invented milestones.\n\n[[docs/design/social-engagement.md#People to follow and profile upkeep|Portfolio and profile upkeep]]"
+    },
+    {
+      "id": "social",
+      "type": "text",
+      "x": 480,
+      "y": 360,
+      "width": 420,
+      "height": 280,
+      "color": "2",
+      "text": "## 6 · LinkedIn + X engagement planner\n\nReview permitted posts from selected people/topics. Send direct links + like, comment or reshare recommendations and editable drafts. You act manually; original posts are another branch.\n\n[[docs/design/social-engagement.md|Engagement planning and action cards]]"
+    },
+    {
+      "id": "relationships",
+      "type": "text",
+      "x": 960,
+      "y": 360,
+      "width": 420,
+      "height": 280,
+      "color": "4",
+      "text": "## 7 · Relationships and leads\n\nUseful interactions may produce referrals or roles. Verify evidence; merge an existing role instead of applying twice.\n\n[[docs/design/social-engagement.md#Visibility and relationship flow|Relationship feedback loop]]"
+    },
+    {
+      "id": "decision",
+      "type": "text",
+      "x": 1440,
+      "y": 360,
+      "width": 420,
+      "height": 280,
+      "color": "2",
+      "text": "## 8 · Evaluate and decide\n\nWeekly bottleneck review. Compare written offers. You negotiate, accept and resign. Pause search only after you accept.\n\n[[docs/design/interviews.md#Better-job criteria|Decision and transition]]"
+    },
+    {
+      "id": "local",
+      "type": "text",
+      "x": 0,
+      "y": 760,
+      "width": 420,
+      "height": 280,
+      "color": "5",
+      "text": "## PRIVATE · Local processing\n\nOpenClaw coordinator + future local model. Career subset only. No cloud AI fallback, whole-vault access or general shell.\n\n[[docs/design/privacy-and-runtime.md#Data and trust-boundary diagram|Data-boundary diagram]]"
+    },
+    {
+      "id": "approval",
+      "type": "text",
+      "x": 480,
+      "y": 760,
+      "width": 420,
+      "height": 280,
+      "color": "2",
+      "text": "## CONTROL · You authorize disclosure\n\nPrivate review page over encrypted private network. Changed packet or expired approval must be reviewed again. Silence means wait.\n\n[[docs/design/exceptions.md#Ticket and approval lifecycle|Phone and approval lifecycle]]"
+    },
+    {
+      "id": "security",
+      "type": "text",
+      "x": 960,
+      "y": 760,
+      "width": 420,
+      "height": 280,
+      "color": "1",
+      "text": "## VERDICT · Restricted OpenClaw\n\nDo not give it LinkedIn/X logins. Restrict employer sessions via a broker. Sandbox all tools, limit network and protect local state.\n\n[[docs/design/privacy-and-runtime.md|Verdict and security checks]]"
+    },
+    {
+      "id": "exceptions",
+      "type": "text",
+      "x": 1440,
+      "y": 760,
+      "width": 420,
+      "height": 280,
+      "color": "1",
+      "text": "## STOP / RECOVER · E01–E40\n\nUnknown write outcome: reconcile before retry. Offline, memory, disk, stale reply, injection or compromise: pause affected work safely.\n\n[[docs/design/exceptions.md|All exceptions and recovery paths]]"
+    },
+    {
+      "id": "privacy",
+      "type": "text",
+      "x": 0,
+      "y": 1130,
+      "width": 1860,
+      "height": 170,
+      "color": "5",
+      "text": "## Privacy boundary\nPrivate inference and drafts stay on your PC. Approved applications go to employers, manual posts go to LinkedIn/X, and your authorized phone receives what you open remotely. Literal zero data leaving the PC cannot coexist with online applications or phone review. Model selection remains open beyond a 9B connectivity baseline; the 2025 30B test is historical hardware evidence only."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "profile",
+      "fromSide": "right",
+      "toNode": "discover",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "criteria"
+    },
+    {
+      "id": "e2",
+      "fromNode": "discover",
+      "fromSide": "right",
+      "toNode": "apply",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "qualified role"
+    },
+    {
+      "id": "e3",
+      "fromNode": "apply",
+      "fromSide": "right",
+      "toNode": "interview",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "confirmed application"
+    },
+    {
+      "id": "e4",
+      "fromNode": "profile",
+      "fromSide": "bottom",
+      "toNode": "portfolio",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "real work"
+    },
+    {
+      "id": "e5",
+      "fromNode": "portfolio",
+      "fromSide": "right",
+      "toNode": "social",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "shareable evidence"
+    },
+    {
+      "id": "e6",
+      "fromNode": "social",
+      "fromSide": "right",
+      "toNode": "relationships",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "your manual activity"
+    },
+    {
+      "id": "e7",
+      "fromNode": "relationships",
+      "fromSide": "top",
+      "toNode": "discover",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "verified lead"
+    },
+    {
+      "id": "e8",
+      "fromNode": "interview",
+      "fromSide": "bottom",
+      "toNode": "decision",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "interview or offer"
+    },
+    {
+      "id": "e9",
+      "fromNode": "decision",
+      "fromSide": "left",
+      "toNode": "profile",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "review one bottleneck"
+    },
+    {
+      "id": "e10",
+      "fromNode": "local",
+      "fromSide": "right",
+      "toNode": "approval",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "prepared work"
+    },
+    {
+      "id": "e11",
+      "fromNode": "approval",
+      "fromSide": "top",
+      "toNode": "apply",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "exact packet approval"
+    },
+    {
+      "id": "e12",
+      "fromNode": "security",
+      "fromSide": "left",
+      "toNode": "approval",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "enforced boundaries"
+    },
+    {
+      "id": "e13",
+      "fromNode": "apply",
+      "fromSide": "bottom",
+      "toNode": "exceptions",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "failure or uncertainty"
+    },
+    {
+      "id": "e14",
+      "fromNode": "exceptions",
+      "fromSide": "left",
+      "toNode": "approval",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "needs your decision"
+    }
+  ]
+}

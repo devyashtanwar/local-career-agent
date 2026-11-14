@@ -1,0 +1,208 @@
+{
+  "agents": {
+    "entries": {
+      "main": {
+        "name": "main",
+        "workspace": "${HOME}/career-ai/workspace",
+        "agentDir": "${HOME}/.openclaw/agents/main/agent",
+        "identity": {
+          "name": "main"
+        }
+      }
+    },
+    "defaults": {
+      "workspace": "${HOME}/career-ai/workspace",
+      "model": {
+        "primary": "career-local/career-qwen35-9b",
+        "fallbacks": []
+      },
+      "utilityModel": "career-local/career-qwen35-9b",
+      "models": {
+        "career-local/career-qwen35-9b": {
+          "alias": "Career Local",
+          "params": {
+            "extra_body": {
+              "reasoning_effort": "none"
+            }
+          }
+        }
+      },
+      "modelPolicy": {
+        "allow": [
+          "career-local/career-qwen35-9b"
+        ]
+      },
+      "maxConcurrent": 1,
+      "timeoutSeconds": 600,
+      "thinkingDefault": "off",
+      "elevatedDefault": "off",
+      "skipBootstrap": true,
+      "bootstrapTotalMaxChars": 6000,
+      "sandbox": {
+        "mode": "all",
+        "backend": "docker",
+        "scope": "agent",
+        "workspaceAccess": "rw",
+        "docker": {
+          "image": "career-openclaw-sandbox:2026.11.3",
+          "network": "none",
+          "readOnlyRoot": true,
+          "capDrop": [
+            "ALL"
+          ],
+          "memory": "1g",
+          "cpus": 2,
+          "pidsLimit": 128,
+          "user": "0:0"
+        },
+        "browser": {
+          "enabled": false,
+          "allowHostControl": false
+        }
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "anthropic": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "codex": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      }
+    },
+    "slots": {
+      "memory": "none"
+    }
+  },
+  "meta": {
+    "migrations": {
+      "modelPolicyAllowlist": true,
+      "utilityModelSeparation": true
+    },
+    "lastTouchedVersion": "2026.11.3"
+  },
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "port": 18789,
+    "auth": {
+      "mode": "token",
+      "token": "GENERATED_BY_CONFIGURE_SCRIPT"
+    },
+    "tailscale": {
+      "mode": "off"
+    },
+    "terminal": {
+      "enabled": false
+    }
+  },
+  "models": {
+    "mode": "replace",
+    "providers": {
+      "career-local": {
+        "baseUrl": "http://127.0.0.1:1234/v1",
+        "apiKey": "local-only",
+        "api": "openai-completions",
+        "timeoutSeconds": 300,
+        "models": [
+          {
+            "id": "career-qwen35-9b",
+            "name": "Local Qwen3.5 9B Q4",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16384,
+            "contextTokens": 16384,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "tools": {
+    "allow": [
+      "read",
+      "write",
+      "edit",
+      "session_status"
+    ],
+    "deny": [
+      "group:runtime",
+      "group:automation",
+      "group:messaging",
+      "group:nodes",
+      "group:plugins",
+      "sessions_spawn",
+      "apply_patch",
+      "group:web",
+      "browser"
+    ],
+    "fs": {
+      "workspaceOnly": true
+    },
+    "elevated": {
+      "enabled": false
+    }
+  },
+  "browser": {
+    "enabled": true,
+    "allowSystemProfileImport": false,
+    "evaluateEnabled": false,
+    "defaultProfile": "career",
+    "executablePath": "/usr/bin/chromium",
+    "headless": true,
+    "noSandbox": false,
+    "profiles": {
+      "career": {
+        "cdpPort": 18801
+      }
+    }
+  },
+  "memory": {
+    "search": {
+      "enabled": false
+    }
+  },
+  "cron": {
+    "enabled": false
+  },
+  "hooks": {
+    "enabled": false
+  },
+  "telemetry": {
+    "enabled": false
+  },
+  "diagnostics": {
+    "enabled": false,
+    "otel": {
+      "enabled": false
+    }
+  },
+  "update": {
+    "checkOnStart": false,
+    "auto": {
+      "enabled": false
+    }
+  },
+  "discovery": {
+    "mdns": {
+      "mode": "off"
+    }
+  }
+}

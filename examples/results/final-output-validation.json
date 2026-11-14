@@ -1,0 +1,24 @@
+{
+  "passed": false,
+  "reason": "missing_skills omitted TypeScript",
+  "expected": {
+    "matching_skills": [
+      "React"
+    ],
+    "missing_skills": [
+      "TypeScript"
+    ],
+    "work_authorization": null,
+    "needs_review": true
+  },
+  "actual": {
+    "matching_skills": [
+      "React"
+    ],
+    "missing_skills": [],
+    "work_authorization": null,
+    "needs_review": true
+  },
+  "scope": "synthetic integration check, not a benchmark",
+  "requires_review": true
+}
