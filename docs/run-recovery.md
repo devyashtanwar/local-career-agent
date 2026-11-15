@@ -144,3 +144,5 @@ no model, gateway, browser or account was started by these checks.
 - The database contains trusted input snapshots and retained model output. Keep
   it and its journals/backups private, out of Git and notes sync. Export only
   deliberately sanitized summaries.
+
+Follow-up: the synthetic embedded model-worker adapter is now verified; see [model-worker.md](model-worker.md). Earlier offline-only statements describe the original controller increment. Native recovery and external-action authority remain unchanged.

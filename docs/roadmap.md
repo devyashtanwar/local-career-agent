@@ -1,6 +1,6 @@
 # Next increments
 
-Progress: the skill-match validator and host-side run/recovery controller are implemented and tested offline. Per-attempt paths, private snapshots and stale-completion fences now work through the CLI. Next: integrate a model-driven synthetic worker using this controller before browser or account access. OpenClaw native recovery is not patched.
+Progress: skill-match validation, run/recovery control and the embedded local-model adapter are verified for synthetic tasks (61 tests plus live execution and explicit recovery). Next: synthetic browser isolation and network/destination checks before account access. Native OpenClaw recovery remains unchanged.
 
 1. **Validated synthetic workflow:** immutable run IDs/paths, deterministic schema
    and fact checks, explicit missing-answer review, bounded retries. Acceptance:

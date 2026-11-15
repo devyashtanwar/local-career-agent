@@ -33,7 +33,7 @@ account access or publishing integration.
 | Security audit | 0 critical, 1 warning at the recorded checkpoint; not a security guarantee |
 | Answer correctness | Mixed: a simple task passed, but a fresh gateway task omitted a missing skill |
 | Output validation | Deterministic v1 skill-match gate rejects the recorded failures; requires explicit invocation |
-| Run controller | Private snapshots, per-attempt paths and explicit recovery tested offline; model adapter not integrated |
+| Run controller | Private snapshots, per-attempt paths, explicit recovery and a synthetic local-model adapter verified |
 | Restart behavior | Interrupted task resumed and overwrote a test output; unresolved workflow risk |
 
 No Gmail, employer portal, LinkedIn or X accounts are connected. No unattended
@@ -95,6 +95,7 @@ hardware results came from the recorded staged setup, not a fresh one-command in
 - [Observed findings, including failures](docs/findings.md)
 - [Output validation and CLI contract](docs/output-validation.md)
 - [Run isolation and explicit recovery](docs/run-recovery.md)
+- [Local-model worker and verified recovery pilot](docs/model-worker.md)
 - [Security and privacy](SECURITY.md)
 - [Model requirements and benchmark plan](docs/models.md)
 - [Next increments](docs/roadmap.md)

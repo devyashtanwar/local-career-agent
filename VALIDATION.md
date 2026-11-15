@@ -39,3 +39,7 @@ All work executed visibly through Cmux SSH on the original Omarchy PC. 17 new va
 ## Run-control increment — 15 November 2026
 
 17 new recovery/controller tests passed; total suite: 37 config/validator/controller tests plus 13 inference tests (50). Separate CLI processes demonstrated fenced old runs, duplicate-completion rejection, preserved result snapshots, explicit resume/cancel and actual saved-failure rejection. Process-death and transaction-rollback tests passed. All work ran visibly through Cmux with synthetic data; no model/browser/accounts started. Native OpenClaw recovery is not disabled, and a model-driven controller adapter is not yet integrated. See docs/run-recovery.md.
+
+## Local-model worker increment — 15 November 2026
+
+61 tests passed (48 main + 13 inference, including 11 new subprocess-worker tests). Two completed real-model skill-match tasks reached review_required, with an intentional two-second interruption and explicit fresh-attempt recovery between them; stale completion was refused. One native tool error recovered before correct output. This verifies a narrow integration, not autonomous account use or a general reliability rate. See docs/model-worker.md and examples/results/model-worker-checkpoint.json.
