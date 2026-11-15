@@ -31,3 +31,7 @@ versions, sandboxed browser control/networking, private-data egress isolation,
 cloud-free operation of every upstream component, real accounts, application
 submission, social publication, PDF production, model comparisons and a durable
 approval/recovery controller. No production-readiness or hiring outcome claim.
+
+## Output-validation increment — 15 November 2026
+
+All work executed visibly through Cmux SSH on the original Omarchy PC. 17 new validator tests plus 3 configuration and 13 inference tests passed (33 total). Actual saved omission/recovery results were rejected; a handwritten correct fixture was accepted with human review still required. Original input files and exact retained output hashes were verified. No model/account/browser/service was started. This does not establish automatic recovery safety or arbitrary resume factuality. See docs/output-validation.md and examples/results/output-validation-checkpoint.json.

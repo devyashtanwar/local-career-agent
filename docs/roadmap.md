@@ -1,5 +1,7 @@
 # Next increments
 
+Progress: the standalone skill-match v1 validator and private per-validation reports are implemented; both saved model failures are rejected. This is one component of increment 1, not a completed workflow. See [output validation](output-validation.md).
+
 1. **Validated synthetic workflow:** immutable run IDs/paths, deterministic schema
    and fact checks, explicit missing-answer review, bounded retries. Acceptance:
    the recorded omitted-skill response is rejected and retained, not promoted.

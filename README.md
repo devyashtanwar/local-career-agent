@@ -32,6 +32,7 @@ account access or publishing integration.
 | Dedicated operator browser | Public page navigation and text snapshot worked; agent browser tool stays denied |
 | Security audit | 0 critical, 1 warning at the recorded checkpoint; not a security guarantee |
 | Answer correctness | Mixed: a simple task passed, but a fresh gateway task omitted a missing skill |
+| Output validation | Deterministic v1 skill-match gate rejects the recorded failures; requires explicit invocation |
 | Restart behavior | Interrupted task resumed and overwrote a test output; unresolved workflow risk |
 
 No Gmail, employer portal, LinkedIn or X accounts are connected. No unattended
@@ -91,6 +92,7 @@ hardware results came from the recorded staged setup, not a fresh one-command in
 
 - [Architecture and trust boundaries](docs/architecture.md)
 - [Observed findings, including failures](docs/findings.md)
+- [Output validation and CLI contract](docs/output-validation.md)
 - [Security and privacy](SECURITY.md)
 - [Model requirements and benchmark plan](docs/models.md)
 - [Next increments](docs/roadmap.md)
