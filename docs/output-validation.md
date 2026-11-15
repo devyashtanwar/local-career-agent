@@ -109,3 +109,7 @@ The first tests failed before implementation. Additional tests exposed numeric
 float overflow and model-writable trusted-input gaps; both were fixed and retested.
 This is offline regression evidence, not new model-quality or browser testing.
 See examples/results/output-validation-checkpoint.json for sanitized CLI decisions.
+
+## Run-control follow-up
+
+The host-side controller now adds private input/result snapshots, unique attempt paths and explicit recovery. See [run isolation](run-recovery.md). Model-driven integration, native OpenClaw recovery behavior and account-action approval remain separate.

@@ -1,6 +1,6 @@
 # Next increments
 
-Progress: the standalone skill-match v1 validator and private per-validation reports are implemented; both saved model failures are rejected. This is one component of increment 1, not a completed workflow. See [output validation](output-validation.md).
+Progress: the skill-match validator and host-side run/recovery controller are implemented and tested offline. Per-attempt paths, private snapshots and stale-completion fences now work through the CLI. Next: integrate a model-driven synthetic worker using this controller before browser or account access. OpenClaw native recovery is not patched.
 
 1. **Validated synthetic workflow:** immutable run IDs/paths, deterministic schema
    and fact checks, explicit missing-answer review, bounded retries. Acceptance:
