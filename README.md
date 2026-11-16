@@ -127,3 +127,8 @@ server; none require a GPU, model download or real account.
 Contributions and iteration are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 The project's original code/docs use the [MIT license](LICENSE). External models,
 OpenClaw, Docker, LM Studio and referenced projects retain their own licenses and terms.
+
+## Read-only PC status extension
+
+The native Telegram `/pcstatus` command reads fixed GPU, RAM, disk and service metrics
+without exposing a shell to the model. See [scope, installation and tests](docs/pc-status.md).
