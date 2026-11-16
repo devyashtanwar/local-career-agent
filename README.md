@@ -137,5 +137,5 @@ OpenClaw, Docker, LM Studio and referenced projects retain their own licenses an
 
 The initial offline review component now has approved-statement rendering, persistent
 version-bound decisions and screenshot regression cases. See
-[the contract and integration status](docs/grounded-draft-reviews.md). This component
-is not yet connected to the live Telegram bot and never authorizes publication.
+[the contract and integration status](docs/grounded-draft-reviews.md). The owner-only Telegram command is now deployed; see
+[usage and verification](docs/telegram-draft-reviews.md). It never authorizes publication.

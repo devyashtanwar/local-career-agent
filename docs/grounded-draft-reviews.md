@@ -74,3 +74,7 @@ do not introduce a second getUpdates consumer or bypass notification-agent isola
 Test the exact displayed draft against the stored digest, Telegram update replay,
 private-chat identity, duplicate delivery, changed drafts and a real service restart.
 Until then the live Telegram bot still runs its existing conversational behavior.
+
+## Telegram integration update
+
+The native command integration is now deployed. See [Telegram draft reviews](telegram-draft-reviews.md) for the verified scope and operational commands. The original offline verification above remains historical evidence.
