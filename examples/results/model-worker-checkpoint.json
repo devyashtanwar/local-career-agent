@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-15",
+  "task": "synthetic-skill-match",
+  "unit_tests_passed": 61,
+  "new_worker_tests_passed": 11,
+  "initial_live_state": "review_required",
+  "initial_elapsed_seconds": 23.77,
+  "intentional_timeout_seconds": 2,
+  "recovered_live_state": "review_required",
+  "recovery_experiment_elapsed_seconds": 24.69,
+  "fresh_attempt_verified": true,
+  "stale_attempt_refused": true,
+  "action_authorized": false,
+  "accounts_connected": false,
+  "native_recovery_patched": false,
+  "all_work_in_visible_cmux": true
+}

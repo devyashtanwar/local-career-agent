@@ -1,0 +1,14 @@
+{
+  "scope": "synthetic local CLI/API control; no model, browser or account actions",
+  "checks": {
+    "stale_run_cannot_replace_newer_result": true,
+    "committed_snapshot_survives_worker_edit": true,
+    "restart_does_not_auto_resume": true,
+    "explicit_resume_and_old_attempt_fencing": true,
+    "cancelled_run_remains_blocked": true,
+    "recorded_model_failure_rejected_by_controller": true
+  },
+  "all_actions_unauthorized": true,
+  "unit_tests_passed": 50,
+  "new_recovery_tests_passed": 17
+}

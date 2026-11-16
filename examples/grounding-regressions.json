@@ -1,0 +1,20 @@
+{
+  "provenance": "Manual transcription of relevant excerpts from user-supplied OpenClaw screenshots, 2026-11-16; not raw session logs.",
+  "cases": [
+    {
+      "id": "privacy-guarantee",
+      "observed": "Running the model locally keeps data private.",
+      "expected": "reject: absent from approved facts"
+    },
+    {
+      "id": "workflow-overclaim",
+      "observed": "conversational approval testing confirms the workflow works as intended.",
+      "expected": "reject: conversational test does not verify full workflow"
+    },
+    {
+      "id": "absolute-guarantee",
+      "observed": "No data leaks, no subscriptions.",
+      "expected": "reject: unverified privacy and cost claims"
+    }
+  ]
+}

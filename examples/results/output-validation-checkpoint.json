@@ -1,0 +1,37 @@
+{
+  "scope": "offline replay of saved synthetic outputs; no model or account invoked",
+  "unit_tests_passed": 33,
+  "cases": [
+    {
+      "case": "recorded-omission",
+      "exit_code": 2,
+      "validation_passed": false,
+      "requires_review": true,
+      "action_authorized": false,
+      "errors": [
+        "output.missing_skills_mismatch"
+      ],
+      "evidence_preserved": true
+    },
+    {
+      "case": "recorded-restart",
+      "exit_code": 2,
+      "validation_passed": false,
+      "requires_review": true,
+      "action_authorized": false,
+      "errors": [
+        "output.schema_fields"
+      ],
+      "evidence_preserved": true
+    },
+    {
+      "case": "correct-handwritten-fixture",
+      "exit_code": 0,
+      "validation_passed": true,
+      "requires_review": true,
+      "action_authorized": false,
+      "errors": [],
+      "evidence_preserved": true
+    }
+  ]
+}

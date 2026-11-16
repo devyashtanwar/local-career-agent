@@ -32,6 +32,8 @@ account access or publishing integration.
 | Dedicated operator browser | Public page navigation and text snapshot worked; agent browser tool stays denied |
 | Security audit | 0 critical, 1 warning at the recorded checkpoint; not a security guarantee |
 | Answer correctness | Mixed: a simple task passed, but a fresh gateway task omitted a missing skill |
+| Output validation | Deterministic v1 skill-match gate rejects the recorded failures; requires explicit invocation |
+| Run controller | Private snapshots, per-attempt paths, explicit recovery and a synthetic local-model adapter verified |
 | Restart behavior | Interrupted task resumed and overwrote a test output; unresolved workflow risk |
 
 No Gmail, employer portal, LinkedIn or X accounts are connected. No unattended
@@ -91,6 +93,9 @@ hardware results came from the recorded staged setup, not a fresh one-command in
 
 - [Architecture and trust boundaries](docs/architecture.md)
 - [Observed findings, including failures](docs/findings.md)
+- [Output validation and CLI contract](docs/output-validation.md)
+- [Run isolation and explicit recovery](docs/run-recovery.md)
+- [Local-model worker and verified recovery pilot](docs/model-worker.md)
 - [Security and privacy](SECURITY.md)
 - [Model requirements and benchmark plan](docs/models.md)
 - [Next increments](docs/roadmap.md)
@@ -127,6 +132,13 @@ server; none require a GPU, model download or real account.
 Contributions and iteration are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 The project's original code/docs use the [MIT license](LICENSE). External models,
 OpenClaw, Docker, LM Studio and referenced projects retain their own licenses and terms.
+
+## Grounded draft reviews
+
+The initial offline review component now has approved-statement rendering, persistent
+version-bound decisions and screenshot regression cases. See
+[the contract and integration status](docs/grounded-draft-reviews.md). The owner-only Telegram command is now deployed; see
+[usage and verification](docs/telegram-draft-reviews.md). It never authorizes publication.
 
 ## Read-only PC status extension
 
