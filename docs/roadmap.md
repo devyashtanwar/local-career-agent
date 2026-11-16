@@ -1,5 +1,7 @@
 # Next increments
 
+Progress: skill-match validation, run/recovery control and the embedded local-model adapter are verified for synthetic tasks (61 tests plus live execution and explicit recovery). Next: synthetic browser isolation and network/destination checks before account access. Native OpenClaw recovery remains unchanged.
+
 1. **Validated synthetic workflow:** immutable run IDs/paths, deterministic schema
    and fact checks, explicit missing-answer review, bounded retries. Acceptance:
    the recorded omitted-skill response is rejected and retained, not promoted.

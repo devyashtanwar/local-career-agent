@@ -24,3 +24,7 @@ credentials*.json
 token*.json
 sessions/
 browser-data/
+
+# Private runtime validation evidence (default storage is outside checkout).
+validation-runs/
+model-output.bin
