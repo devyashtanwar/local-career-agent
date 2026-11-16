@@ -39,5 +39,10 @@
       "output": "\u2714 Native status command rejects extra authority and reads real host without the LLM (47.615126ms)\n\u2714 Status manifest declares startup activation and command ownership (0.400355ms)\n\u2139 tests 2\n\u2139 suites 0\n\u2139 pass 2\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 83.716664\n"
     }
   ],
-  "live_telegram_confirmation": "pending"
+  "live_telegram_confirmation": {
+    "source": "user confirmation in chat",
+    "pcstatus": "GPU/RAM/disk/service readings received",
+    "extra_argument": "pcstatus restart refused",
+    "deployed_source_matches_commit": true
+  }
 }

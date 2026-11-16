@@ -67,3 +67,7 @@ confirmation is recorded separately from automated checks.
 Failure/recovery notifications, off-host PC availability detection, shared-participant
 roles, note capture, agency workflows and model-lab queues remain planned. No recurring
 monitor or automatic system repair was installed by this status increment.
+
+Live verification on 16 November 2026: the user confirmed real Telegram readings and
+refusal of /pcstatus restart. Deployed module/plugin bytes matched this source, and
+the private runtime collector and active gateway were checked directly.
