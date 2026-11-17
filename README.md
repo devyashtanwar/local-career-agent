@@ -139,3 +139,8 @@ The initial offline review component now has approved-statement rendering, persi
 version-bound decisions and screenshot regression cases. See
 [the contract and integration status](docs/grounded-draft-reviews.md). The owner-only Telegram command is now deployed; see
 [usage and verification](docs/telegram-draft-reviews.md). It never authorizes publication.
+
+## Read-only PC status extension
+
+The native Telegram `/pcstatus` command reads fixed GPU, RAM, disk and service metrics
+without exposing a shell to the model. See [scope, installation and tests](docs/pc-status.md).
